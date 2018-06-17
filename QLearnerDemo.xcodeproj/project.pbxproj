@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		195F748820D624DD00A8C647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F748720D624DD00A8C647 /* AppDelegate.swift */; };
-		195F748A20D624DD00A8C647 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F748920D624DD00A8C647 /* ViewController.swift */; };
 		195F748D20D624DD00A8C647 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195F748B20D624DD00A8C647 /* Main.storyboard */; };
 		195F748F20D624E000A8C647 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 195F748E20D624E000A8C647 /* Assets.xcassets */; };
 		195F749220D624E000A8C647 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 195F749020D624E000A8C647 /* LaunchScreen.storyboard */; };
 		195F749D20D624E000A8C647 /* QLearnerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F749C20D624E000A8C647 /* QLearnerDemoTests.swift */; };
+		195F74AA20D6255200A8C647 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F74A920D6255200A8C647 /* CategoryViewController.swift */; };
+		195F74AC20D625EF00A8C647 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F74AB20D625EF00A8C647 /* DetailViewController.swift */; };
+		195F74AE20D625FA00A8C647 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F74AD20D625FA00A8C647 /* CheckoutViewController.swift */; };
+		195F74B020D6261400A8C647 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F74AF20D6261400A8C647 /* ImageCollectionViewCell.swift */; };
+		195F74BD20D6316800A8C647 /* CheckoutAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195F74BC20D6316800A8C647 /* CheckoutAgent.swift */; };
+		195F74BE20D6319B00A8C647 /* QLearner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195F74B920D62E2F00A8C647 /* QLearner.framework */; };
+		195F74BF20D6319B00A8C647 /* QLearner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 195F74B920D62E2F00A8C647 /* QLearner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +29,46 @@
 			remoteGlobalIDString = 195F748320D624DD00A8C647;
 			remoteInfo = QLearnerDemo;
 		};
+		195F74B820D62E2F00A8C647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 195F74B320D62E2E00A8C647 /* QLearner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 197CC34220D61C27004C6F4C;
+			remoteInfo = QLearner;
+		};
+		195F74BA20D62E2F00A8C647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 195F74B320D62E2E00A8C647 /* QLearner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 197CC34B20D61C27004C6F4C;
+			remoteInfo = QLearnerTests;
+		};
+		195F74C020D6319B00A8C647 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 195F74B320D62E2E00A8C647 /* QLearner.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 197CC34120D61C27004C6F4C;
+			remoteInfo = QLearner;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		195F74C220D6319B00A8C647 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				195F74BF20D6319B00A8C647 /* QLearner.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		195F748420D624DD00A8C647 /* QLearnerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QLearnerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195F748720D624DD00A8C647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		195F748920D624DD00A8C647 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		195F748C20D624DD00A8C647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		195F748E20D624E000A8C647 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		195F749120D624E000A8C647 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +76,12 @@
 		195F749820D624E000A8C647 /* QLearnerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLearnerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		195F749C20D624E000A8C647 /* QLearnerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QLearnerDemoTests.swift; sourceTree = "<group>"; };
 		195F749E20D624E000A8C647 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195F74A920D6255200A8C647 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		195F74AB20D625EF00A8C647 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		195F74AD20D625FA00A8C647 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		195F74AF20D6261400A8C647 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		195F74B320D62E2E00A8C647 /* QLearner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QLearner.xcodeproj; path = QLearner/QLearner.xcodeproj; sourceTree = SOURCE_ROOT; };
+		195F74BC20D6316800A8C647 /* CheckoutAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutAgent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195F74BE20D6319B00A8C647 /* QLearner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +124,13 @@
 		195F748620D624DD00A8C647 /* QLearnerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				195F74B320D62E2E00A8C647 /* QLearner.xcodeproj */,
 				195F748720D624DD00A8C647 /* AppDelegate.swift */,
-				195F748920D624DD00A8C647 /* ViewController.swift */,
+				195F74BC20D6316800A8C647 /* CheckoutAgent.swift */,
+				195F74A920D6255200A8C647 /* CategoryViewController.swift */,
+				195F74AB20D625EF00A8C647 /* DetailViewController.swift */,
+				195F74AD20D625FA00A8C647 /* CheckoutViewController.swift */,
+				195F74AF20D6261400A8C647 /* ImageCollectionViewCell.swift */,
 				195F748B20D624DD00A8C647 /* Main.storyboard */,
 				195F748E20D624E000A8C647 /* Assets.xcassets */,
 				195F749020D624E000A8C647 /* LaunchScreen.storyboard */,
@@ -96,6 +148,15 @@
 			path = QLearnerDemoTests;
 			sourceTree = "<group>";
 		};
+		195F74B420D62E2E00A8C647 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				195F74B920D62E2F00A8C647 /* QLearner.framework */,
+				195F74BB20D62E2F00A8C647 /* QLearnerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,10 +167,12 @@
 				195F748020D624DD00A8C647 /* Sources */,
 				195F748120D624DD00A8C647 /* Frameworks */,
 				195F748220D624DD00A8C647 /* Resources */,
+				195F74C220D6319B00A8C647 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				195F74C120D6319B00A8C647 /* PBXTargetDependency */,
 			);
 			name = QLearnerDemo;
 			productName = QLearnerDemo;
@@ -164,6 +227,12 @@
 			mainGroup = 195F747B20D624DD00A8C647;
 			productRefGroup = 195F748520D624DD00A8C647 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 195F74B420D62E2E00A8C647 /* Products */;
+					ProjectRef = 195F74B320D62E2E00A8C647 /* QLearner.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				195F748320D624DD00A8C647 /* QLearnerDemo */,
@@ -171,6 +240,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		195F74B920D62E2F00A8C647 /* QLearner.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QLearner.framework;
+			remoteRef = 195F74B820D62E2F00A8C647 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		195F74BB20D62E2F00A8C647 /* QLearnerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QLearnerTests.xctest;
+			remoteRef = 195F74BA20D62E2F00A8C647 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		195F748220D624DD00A8C647 /* Resources */ = {
@@ -197,7 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				195F748A20D624DD00A8C647 /* ViewController.swift in Sources */,
+				195F74BD20D6316800A8C647 /* CheckoutAgent.swift in Sources */,
+				195F74AE20D625FA00A8C647 /* CheckoutViewController.swift in Sources */,
+				195F74B020D6261400A8C647 /* ImageCollectionViewCell.swift in Sources */,
+				195F74AC20D625EF00A8C647 /* DetailViewController.swift in Sources */,
+				195F74AA20D6255200A8C647 /* CategoryViewController.swift in Sources */,
 				195F748820D624DD00A8C647 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +307,11 @@
 			isa = PBXTargetDependency;
 			target = 195F748320D624DD00A8C647 /* QLearnerDemo */;
 			targetProxy = 195F749920D624E000A8C647 /* PBXContainerItemProxy */;
+		};
+		195F74C120D6319B00A8C647 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QLearner;
+			targetProxy = 195F74C020D6319B00A8C647 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -357,10 +452,12 @@
 		195F74A220D624E000A8C647 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TRBCXNYXG;
 				INFOPLIST_FILE = QLearnerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,10 +472,12 @@
 		195F74A320D624E000A8C647 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4TRBCXNYXG;
 				INFOPLIST_FILE = QLearnerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
