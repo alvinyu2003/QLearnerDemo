@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191F0BAC20E99E3300F797F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F0BAB20E99E3300F797F0 /* AppDelegate.swift */; };
+		191F0BAE20E99E3300F797F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F0BAD20E99E3300F797F0 /* ViewController.swift */; };
+		191F0BB120E99E3300F797F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191F0BAF20E99E3300F797F0 /* Main.storyboard */; };
+		191F0BB320E99E3400F797F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191F0BB220E99E3400F797F0 /* Assets.xcassets */; };
+		191F0BB620E99E3400F797F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191F0BB420E99E3400F797F0 /* LaunchScreen.storyboard */; };
+		191F0BC120E99E3500F797F0 /* QIKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F0BC020E99E3500F797F0 /* QIKitDemoTests.swift */; };
+		191F0BD720E99E8600F797F0 /* QLearner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191F0BD120E99E3E00F797F0 /* QLearner.framework */; };
+		191F0BD820E99E8600F797F0 /* QLearner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 191F0BD120E99E3E00F797F0 /* QLearner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		191F0BDD20E9CC7000F797F0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191F0BDC20E9CC7000F797F0 /* SettingsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		191F0BBD20E99E3500F797F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191F0BA020E99E3300F797F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 191F0BA720E99E3300F797F0;
+			remoteInfo = QIKitDemo;
+		};
+		191F0BD020E99E3E00F797F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191F0BCB20E99E3D00F797F0 /* QLearner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 197CC34220D61C27004C6F4C;
+			remoteInfo = QLearner;
+		};
+		191F0BD220E99E3E00F797F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191F0BCB20E99E3D00F797F0 /* QLearner.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 197CC34B20D61C27004C6F4C;
+			remoteInfo = QLearnerTests;
+		};
+		191F0BD920E99E8600F797F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 191F0BCB20E99E3D00F797F0 /* QLearner.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 197CC34120D61C27004C6F4C;
+			remoteInfo = QLearner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		191F0BDB20E99E8600F797F0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				191F0BD820E99E8600F797F0 /* QLearner.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		191F0BA820E99E3300F797F0 /* QIKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QIKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		191F0BAB20E99E3300F797F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		191F0BAD20E99E3300F797F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		191F0BB020E99E3300F797F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		191F0BB220E99E3400F797F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		191F0BB520E99E3400F797F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		191F0BB720E99E3400F797F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191F0BBC20E99E3500F797F0 /* QIKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QIKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		191F0BC020E99E3500F797F0 /* QIKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QIKitDemoTests.swift; sourceTree = "<group>"; };
+		191F0BC220E99E3500F797F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191F0BCB20E99E3D00F797F0 /* QLearner.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QLearner.xcodeproj; path = ../../QLearner/QLearner.xcodeproj; sourceTree = "<group>"; };
+		191F0BDC20E9CC7000F797F0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		191F0BA520E99E3300F797F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191F0BD720E99E8600F797F0 /* QLearner.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191F0BB920E99E3500F797F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		191F0B9F20E99E3300F797F0 = {
+			isa = PBXGroup;
+			children = (
+				191F0BAA20E99E3300F797F0 /* QIKitDemo */,
+				191F0BBF20E99E3500F797F0 /* QIKitDemoTests */,
+				191F0BA920E99E3300F797F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		191F0BA920E99E3300F797F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				191F0BA820E99E3300F797F0 /* QIKitDemo.app */,
+				191F0BBC20E99E3500F797F0 /* QIKitDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		191F0BAA20E99E3300F797F0 /* QIKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				191F0BCB20E99E3D00F797F0 /* QLearner.xcodeproj */,
+				191F0BAB20E99E3300F797F0 /* AppDelegate.swift */,
+				191F0BAD20E99E3300F797F0 /* ViewController.swift */,
+				191F0BDC20E9CC7000F797F0 /* SettingsViewController.swift */,
+				191F0BAF20E99E3300F797F0 /* Main.storyboard */,
+				191F0BB220E99E3400F797F0 /* Assets.xcassets */,
+				191F0BB420E99E3400F797F0 /* LaunchScreen.storyboard */,
+				191F0BB720E99E3400F797F0 /* Info.plist */,
+			);
+			path = QIKitDemo;
+			sourceTree = "<group>";
+		};
+		191F0BBF20E99E3500F797F0 /* QIKitDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				191F0BC020E99E3500F797F0 /* QIKitDemoTests.swift */,
+				191F0BC220E99E3500F797F0 /* Info.plist */,
+			);
+			path = QIKitDemoTests;
+			sourceTree = "<group>";
+		};
+		191F0BCC20E99E3D00F797F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				191F0BD120E99E3E00F797F0 /* QLearner.framework */,
+				191F0BD320E99E3E00F797F0 /* QLearnerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		191F0BA720E99E3300F797F0 /* QIKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191F0BC520E99E3500F797F0 /* Build configuration list for PBXNativeTarget "QIKitDemo" */;
+			buildPhases = (
+				191F0BA420E99E3300F797F0 /* Sources */,
+				191F0BA520E99E3300F797F0 /* Frameworks */,
+				191F0BA620E99E3300F797F0 /* Resources */,
+				191F0BDB20E99E8600F797F0 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				191F0BDA20E99E8600F797F0 /* PBXTargetDependency */,
+			);
+			name = QIKitDemo;
+			productName = QIKitDemo;
+			productReference = 191F0BA820E99E3300F797F0 /* QIKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		191F0BBB20E99E3500F797F0 /* QIKitDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191F0BC820E99E3500F797F0 /* Build configuration list for PBXNativeTarget "QIKitDemoTests" */;
+			buildPhases = (
+				191F0BB820E99E3500F797F0 /* Sources */,
+				191F0BB920E99E3500F797F0 /* Frameworks */,
+				191F0BBA20E99E3500F797F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				191F0BBE20E99E3500F797F0 /* PBXTargetDependency */,
+			);
+			name = QIKitDemoTests;
+			productName = QIKitDemoTests;
+			productReference = 191F0BBC20E99E3500F797F0 /* QIKitDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		191F0BA020E99E3300F797F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Alvin Yu";
+				TargetAttributes = {
+					191F0BA720E99E3300F797F0 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					191F0BBB20E99E3500F797F0 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 191F0BA720E99E3300F797F0;
+					};
+				};
+			};
+			buildConfigurationList = 191F0BA320E99E3300F797F0 /* Build configuration list for PBXProject "QIKitDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 191F0B9F20E99E3300F797F0;
+			productRefGroup = 191F0BA920E99E3300F797F0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 191F0BCC20E99E3D00F797F0 /* Products */;
+					ProjectRef = 191F0BCB20E99E3D00F797F0 /* QLearner.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				191F0BA720E99E3300F797F0 /* QIKitDemo */,
+				191F0BBB20E99E3500F797F0 /* QIKitDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		191F0BD120E99E3E00F797F0 /* QLearner.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = QLearner.framework;
+			remoteRef = 191F0BD020E99E3E00F797F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		191F0BD320E99E3E00F797F0 /* QLearnerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = QLearnerTests.xctest;
+			remoteRef = 191F0BD220E99E3E00F797F0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		191F0BA620E99E3300F797F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191F0BB620E99E3400F797F0 /* LaunchScreen.storyboard in Resources */,
+				191F0BB320E99E3400F797F0 /* Assets.xcassets in Resources */,
+				191F0BB120E99E3300F797F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191F0BBA20E99E3500F797F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		191F0BA420E99E3300F797F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191F0BAE20E99E3300F797F0 /* ViewController.swift in Sources */,
+				191F0BAC20E99E3300F797F0 /* AppDelegate.swift in Sources */,
+				191F0BDD20E9CC7000F797F0 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		191F0BB820E99E3500F797F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191F0BC120E99E3500F797F0 /* QIKitDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		191F0BBE20E99E3500F797F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 191F0BA720E99E3300F797F0 /* QIKitDemo */;
+			targetProxy = 191F0BBD20E99E3500F797F0 /* PBXContainerItemProxy */;
+		};
+		191F0BDA20E99E8600F797F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QLearner;
+			targetProxy = 191F0BD920E99E8600F797F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		191F0BAF20E99E3300F797F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191F0BB020E99E3300F797F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		191F0BB420E99E3400F797F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191F0BB520E99E3400F797F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		191F0BC320E99E3500F797F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		191F0BC420E99E3500F797F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		191F0BC620E99E3500F797F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TRBCXNYXG;
+				INFOPLIST_FILE = QIKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alvinyu.QIKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		191F0BC720E99E3500F797F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TRBCXNYXG;
+				INFOPLIST_FILE = QIKitDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alvinyu.QIKitDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		191F0BC920E99E3500F797F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TRBCXNYXG;
+				INFOPLIST_FILE = QIKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alvinyu.QIKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QIKitDemo.app/QIKitDemo";
+			};
+			name = Debug;
+		};
+		191F0BCA20E99E3500F797F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4TRBCXNYXG;
+				INFOPLIST_FILE = QIKitDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alvinyu.QIKitDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QIKitDemo.app/QIKitDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		191F0BA320E99E3300F797F0 /* Build configuration list for PBXProject "QIKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191F0BC320E99E3500F797F0 /* Debug */,
+				191F0BC420E99E3500F797F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		191F0BC520E99E3500F797F0 /* Build configuration list for PBXNativeTarget "QIKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191F0BC620E99E3500F797F0 /* Debug */,
+				191F0BC720E99E3500F797F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		191F0BC820E99E3500F797F0 /* Build configuration list for PBXNativeTarget "QIKitDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191F0BC920E99E3500F797F0 /* Debug */,
+				191F0BCA20E99E3500F797F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 191F0BA020E99E3300F797F0 /* Project object */;
+}
