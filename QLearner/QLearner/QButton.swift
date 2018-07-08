@@ -10,31 +10,57 @@ import UIKit
 
 public class QButton: UIButton {
     
-    // This is an example usage
-    // Negative Reinforcement of -1
-    // Reward of 3
-    // Max Reward of 3
-    //    cta: (title, probability)
-    //    [
-    //        ("Sign Up", 0.33),
-    //        ("Sign Up Now", 0.33),
-    //        ("Sign Me Up", 0.33)
-    //    ]
-
-    private let ctas: [(title: String, probability: Double)]
+    public struct Configuration {
+        let titles: [String]
+        let reward: Int
+        let maxReward: Int
+        let penalty: Int
+        let initialQ: [Int]?
+        let probabilities: [Double]?
+        
+        public init(titles: [String],
+                    reward: Int = 10,
+                    maxReward: Int = 10,
+                    penalty: Int = 1,
+                    initialQ: [Int]? = nil,
+                    probabilities: [Double]? = nil) {
+            self.titles = titles
+            self.reward = reward
+            self.maxReward = maxReward
+            self.penalty = penalty
+            self.initialQ = initialQ
+            self.probabilities = probabilities
+        }
+    }
+    
+    private let titles: [String]
     private var Q: [Int]
-    private let neg: Int
     private let reward: Int
     private let maxReward: Int
+    private let penalty: Int
+    private let probabilities: [Double]
     
-    required public init(ctas: [(String, Double)], negativeReinforcement: Int = 1, reward: Int, maxReward: Int) {
-        assert(maxReward >= reward)
-        assert(negativeReinforcement < 0)
-        self.ctas = ctas
-        self.reward = reward
-        self.maxReward = maxReward
-        neg = negativeReinforcement
-        Q = Array(repeating: 0, count: ctas.count)
+    required public init(config: Configuration) {
+        assert(config.reward >= 0)
+        assert(config.penalty < 0)
+        assert(config.maxReward >= config.reward)
+
+        titles = config.titles
+        reward = config.reward
+        maxReward = config.maxReward
+        penalty = config.penalty
+        
+        if let probs = config.probabilities, probs.count == titles.count {
+            probabilities = probs
+        } else {
+            probabilities = Array<Double>(repeating: 1.0, count: titles.count)
+        }
+        if let startingQ = config.initialQ, startingQ.count == titles.count {
+            Q = startingQ
+        } else {
+            Q = Array<Int>(repeating: 0, count: titles.count)
+        }
+        
         super.init(frame: .zero)
         addTarget(self, action: #selector(didTap(_:)), for: .touchUpInside)
     }
@@ -45,7 +71,7 @@ public class QButton: UIButton {
     
     @IBAction private func didTap(_ sender: UIButton) {
         if let title = currentTitle,
-            let index = ctas.index(where: { title == $0.title }) {
+            let index = titles.index(where: { title == $0 }) {
             let qsa = Q[index] + reward
             Q[index] = qsa > maxReward ? maxReward : qsa
         }
@@ -55,18 +81,18 @@ public class QButton: UIButton {
         let max = Q.max() ?? 0
         if max > 0 {
             if let index = Q.index(of: max) {
-                setTitle(ctas[index].title, for: .normal)
+                setTitle(titles[index], for: .normal)
                 updateQ(index: index)
             }
         } else {
-            let index = randomNumber(probabilities: ctas.map { $0.probability })
-            setTitle(ctas[index].title, for: .normal)
+            let index = randomNumber(probabilities: probabilities)
+            setTitle(titles[index], for: .normal)
             updateQ(index: index)
         }
     }
     
     private func updateQ(index: Int) {
-        let qsa = Q[index] + neg
+        let qsa = Q[index] + penalty
         Q[index] = qsa > 0 ? qsa : 0
     }
     

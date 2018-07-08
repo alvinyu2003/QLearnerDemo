@@ -24,11 +24,13 @@ class ViewController: UIViewController {
     }
 
     func addButtons() {
-        let ctas = [("Sign Up", 0.25),
-                    ("Sign Up Now", 0.25),
-                    ("Sign Me Up", 0.25),
-                    ("Register", 0.25)]
-        let signup = QButton(ctas: ctas, negativeReinforcement: -1, reward: 3, maxReward: 3)
+        let config = QButton.Configuration(
+            titles: ["Sign Up", "Sign Up Now", "Sign Me Up", "Register"],
+            reward: 3,
+            maxReward: 3,
+            penalty: -1)
+        
+        let signup = QButton(config: config)
         signup.translatesAutoresizingMaskIntoConstraints = false
         signup.setTitleColor(.white, for: .normal)
         signup.backgroundColor = .black
